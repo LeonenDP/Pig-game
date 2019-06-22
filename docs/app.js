@@ -78,7 +78,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
 
         // If the dice is 1
         else if(dice1 === 1 || dice2 === 1) {
-            alert('1 resets your level score');
+            document.querySelector('.game-info').textContent = '1 resets this round score.';
             setTimeout(nextPlayer, 1000);
         }
 
