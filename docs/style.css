@@ -5,22 +5,22 @@
 .final-score {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
     top: 520px;
-    color: #555;
+    transform: translateX(-50%);
+    font-family: Lato;
     font-size: 18px;
-    font-family: 'Lato';
     text-align: center;
     padding: 10px;
     width: 160px;
     text-transform: uppercase;
+    color: #555;
+}
+.final-score:focus {
+    outline: none;
 }
 
-.final-score:focus { outline: none; }
-
-#dice-1 { top: 120px; }
-#dice-2 { top: 250px; }
-
+#dice-1 {top: 120px;}
+#dice-2 {top: 250px;}
 
 * {
     margin: 0;
@@ -145,6 +145,13 @@ button:hover i { margin-right: 20px; }
 button:focus {
     outline: none;
 }
+.game-info {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+}
 
 i {
     color: #EB4D4D;
@@ -154,7 +161,7 @@ i {
     line-height: 1;
     vertical-align: text-top;
     margin-top: -4px;
-    transition: margin 0.3s;
+    transition: margin 0.3s ease-out;
 }
 
 .btn-new { top: 45px;}
