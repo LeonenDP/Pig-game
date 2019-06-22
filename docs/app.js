@@ -61,7 +61,8 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
 
         // 3. Update round score, IF the rolled number is NOT 1
         if (dice1 === 6 && dice2 === 6){
-            alert('6 on both dices resets your OVERALL score ;(');
+            setTimeout(function(){
+                alert('6 on both dices resets your OVERALL score ;(')}, 2000);
             nextPlayer();
 
             scores[activePlayer] = 0;
