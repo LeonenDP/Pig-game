@@ -44,9 +44,6 @@ init();
 
 
 
-
-
-
 // Adding an event listener to the 'roll dice' button:
 document.querySelector('.btn-roll').addEventListener('click', function () {
 
